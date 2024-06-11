@@ -1,0 +1,65 @@
+```markdown
+# AWS Dump Keywords Summary
+
+- **Configuration changes** ➡️ AWS Config
+- **Unauthorized config changes** ➡️ AWS Config
+- **VoIP** ➡️ AWS Global Accelerator
+- **UDP** ➡️ Network Load Balancer (NLB)
+- **CloudFront, accessible 제한** ➡️ OAI (Origin Access Identity)
+- **Historical reports** ➡️ Static content ➡️ S3
+- **Amazon Athena** ➡️ Serverless
+- **Specific order (특정순서)** ➡️ SQS FIFO
+- **ReadIOPS and CPUUtilization metrics** ➡️ Aurora Replica, IOPS
+- **PHP, 5xx** ➡️ Aurora, AMI, Spot Fleet
+- **Seamless** ➡️ AMI
+- **Business day heavy usage, weekend ok** ➡️ Reserved Instances
+- **Reduce false alarms** ➡️ CloudWatch Composite Alarm
+- **Caching** ➡️ Edge location ➡️ CloudFront
+- **CloudFront**: Video On Demand (VOD), live streaming video using HTTP
+- **Global Accelerator**: Gaming (UDP), IoT (MQTT), Voice over IP (VoIP)
+- **SaaS** ➡️ AppFlow
+- **Upload images to S3 through a single NAT gateway** ➡️ VPC Endpoint
+- **S3 bucket accidental deletion** ➡️ Enable Versioning, MFA Delete
+- **PII** ➡️ Amazon Macie
+- **High availability storage** ➡️ Amazon S3
+- **Ap-northwest-3 region** ➡️ Control Tower, SCPs
+- **MSP** ➡️ MSP
+- **SMB** ➡️ S3 File Gateway
+- **Record a history of API calls** ➡️ AWS CloudTrail
+- **Low-latency retrieval** ➡️ DynamoDB
+- **Firehose does not support DynamoDB**
+- **CloudTrail** - 사용자 활동 및 API 호출 기록을 추적.
+- **Config** - 태그 리소스의 구성 및 관계를 평가, 감사 및 평가.
+- **SSD, database storage performance is the problem** ➡️ Provisioned IOPS SSD
+- **S3 + Glacier** ➡️ Cost-effective
+- **HPC** ➡️ FSx for Lustre
+- **Containerized application, scale, high availability** ➡️ ECR, ECS, Fargate
+- **Spot instance 가격 매우 쌈** ➡️ 언제든지 중지될 수 있어 ➡️ 임시작업에 사용
+- **Limit access to specific services, single point** ➡️ SCP (Service Control Policy)
+- **Specific country only** ➡️ Geo Match Condition ➡️ WAF
+- **Amazon Athena** ➡️ Serverless, interactive query service using standard SQL
+- **Amazon FSx** ➡️ Windows, Lustre
+- **Containerized, minimize operational overhead** ➡️ Amazon ECS + AWS Fargate
+- **Detect inappropriate content** ➡️ Amazon Rekognition
+- **Personal Identifiable Information (PII), sensitive data** ➡️ Amazon Macie
+- **Prevent S3 bucket deletion, secure solution** ➡️ S3 Versioning / MFA Delete
+- **Amazon S3** - Static website, high availability storage
+- **S3 + CloudFront / DynamoDB / Lambda** ➡️ Scalability
+- **S3 Lifecycle + S3 Glacier Deep Archive**
+- **Amazon S3 Intelligent Tiering** ➡️ Unknown or unpredictable access patterns
+- **NLB**: TCP, UDP, Layer 4
+- **ALB**: HTTP, HTTPS, Layer 7
+- **Amazon ECS** ➡️ Migration, microservices, minimal operational overhead
+- **AWS Elastic Load Balancing** ➡️ SSL termination support
+- **MySQL read replica** ➡️ Same compute and storage resources as the source DB instance
+- **Aurora DB cluster volume replication** ➡️ Use Aurora replication to create a new cluster with the same data
+- **Share KMS key with a partner for access** ➡️ EBS snapshot encryption
+- **S3, minimize data transfer cost between US and Europe** ➡️ S3 Cross-Region Replication (CRR)
+- **Variable demand, serverless (reduce operational overhead), modernization** ➡️ Lambda
+- **JSON data** ➡️ DynamoDB
+- **CPU Utilization** ➡️ Amazon EC2 Auto Scaling Target Tracking Policy
+- **Auto Scaling Group**: Group of EC2 instances with the same configuration (same AMI) ➡️ High availability
+- **Restrict access to an S3 bucket using CloudFront distribution** ➡️ Create a CloudFront Origin Access Identity (OAI)
+- **Decoupling (분리) keyword + message processing** ➡️ SNS, SQS
+- **Inspect and filter VPC traffic** ➡️ AWS Network Firewall
+```
